@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <title>Pendaftaran Keanggotaan Organisasi Kampus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Formulir Registrasi Anggota</h1>
+            <p>Silakan lengkapi biodata diri Anda di bawah ini untuk berpartisipasi dalam organisasi mahasiswa.</p>
+        </div>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informasi Identitas Diri</legend>
+
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br />
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" />
+                </p>
+
+                <p>Jenis Kelamin:</p>
+                <p class="gender-options">
+                    <input type="radio" id="laki" name="gender" value="L" />
+                    <label for="laki">Laki-Laki</label>
+
+                    <input type="radio" id="perempuan" name="gender" value="P" />
+                    <label for="perempuan">Perempuan</label>
+                </p>
+
+                <p>
+                    <label for="prodi">Program Studi / Jurusan:</label><br />
+                    <select id="prodi" name="prodi">
+                        <option value="">-- Pilih Program Studi --</option>
+                        <option value="Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="organisasi">Organisasi yang Diminati:</label><br />
+                    <select id="organisasi" name="organisasi">
+                        <option value="">-- Pilih Organisasi --</option>
+                        <option value="BEM">Badan Eksekutif Mahasiswa (BEM)</option>
+                        <option value="HIMA">Himpunan Mahasiswa (HIMA)</option>
+                        <option value="UKM">Unit Kegiatan Mahasiswa (UKM)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="alasan">Motivasi / Alasan Bergabung:</label><br />
+                    <textarea id="alasan" name="alasan" rows="4" cols="40" placeholder="Tuliskan alasan Anda bergabung..."></textarea>
+                </p>
+
+                <p>
+                    <label for="kontak">Nomor WhatsApp / Telepon:</label><br />
+                    <input type="text" id="kontak" name="kontak" placeholder="Contoh: 08123456789" />
+                </p>
+
+                <div class="button-group">
+                    <input type="submit" value="Kirim Pendaftaran" class="btn-submit" />
+                    <input type="reset" value="Reset Form" class="btn-reset" />
+                </div>
+            </fieldset>
+        </form>
+
+        <p class="footer">&#169; Formulir Pendaftaran Organisasi Mahasiswa Kampus</p>
+    </div>
+</body>
+</html>

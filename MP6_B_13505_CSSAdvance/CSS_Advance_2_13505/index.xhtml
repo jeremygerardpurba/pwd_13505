@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <title>Pendaftaran Peserta Workshop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>Daftar Workshop Sekarang</h1>
+            <p>Amankan kursi Anda! Isi data berikut dengan benar untuk mengikuti workshop pilihan Anda.</p>
+        </div>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Data Peserta</legend>
+
+                <p>
+                    <label for="nama">Nama Peserta:</label><br />
+                    <input type="text" id="nama" name="nama" placeholder="Nama sesuai identitas" />
+                </p>
+
+                <p>
+                    <label for="email">Alamat Email:</label><br />
+                    <input type="text" id="email" name="email" placeholder="contoh@email.com" />
+                </p>
+
+                <p>
+                    <label for="telepon">Nomor HP:</label><br />
+                    <input type="text" id="telepon" name="telepon" placeholder="Contoh: 081234567890" />
+                </p>
+
+                <p>
+                    <label for="instansi">Asal Kampus / Instansi:</label><br />
+                    <input type="text" id="instansi" name="instansi" placeholder="Nama kampus atau tempat kerja" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pilihan Workshop</legend>
+
+                <p>
+                    <label for="workshop">Topik Workshop:</label><br />
+                    <select id="workshop" name="workshop">
+                        <option value="">-- Pilih Topik --</option>
+                        <option value="web">Dasar Pengembangan Web</option>
+                        <option value="desain">Desain Antarmuka (UI/UX)</option>
+                        <option value="data">Pengantar Analisis Data</option>
+                    </select>
+                </p>
+
+                <p>Tingkat Kemampuan:</p>
+                <p class="choice-row">
+                    <input type="radio" id="pemula" name="level" value="pemula" />
+                    <label for="pemula">Pemula</label>
+
+                    <input type="radio" id="menengah" name="level" value="menengah" />
+                    <label for="menengah">Menengah</label>
+
+                    <input type="radio" id="mahir" name="level" value="mahir" />
+                    <label for="mahir">Mahir</label>
+                </p>
+
+                <p>Fasilitas yang Diinginkan:</p>
+                <p class="choice-row">
+                    <input type="checkbox" id="sertifikat" name="fasilitas" value="sertifikat" />
+                    <label for="sertifikat">Sertifikat</label>
+
+                    <input type="checkbox" id="materi" name="fasilitas" value="materi" />
+                    <label for="materi">Modul Materi</label>
+
+                    <input type="checkbox" id="konsumsi" name="fasilitas" value="konsumsi" />
+                    <label for="konsumsi">Konsumsi</label>
+                </p>
+
+                <p>
+                    <label for="harapan">Harapan Setelah Mengikuti Workshop:</label><br />
+                    <textarea id="harapan" name="harapan" rows="4" cols="40" placeholder="Ceritakan apa yang ingin Anda pelajari..."></textarea>
+                </p>
+
+                <p class="agree">
+                    <input type="checkbox" id="setuju" name="setuju" value="ya" />
+                    <label for="setuju">Saya menyatakan data yang diisi sudah benar.</label>
+                </p>
+
+                <div class="actions">
+                    <input type="submit" value="Daftar Sekarang" class="btn-send" />
+                    <input type="reset" value="Kosongkan Isian" class="btn-clear" />
+                </div>
+            </fieldset>
+        </form>
+
+        <p class="note">&#169; Panitia Workshop - Terima kasih atas partisipasi Anda</p>
+    </div>
+</body>
+</html>
